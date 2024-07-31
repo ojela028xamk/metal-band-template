@@ -12,7 +12,9 @@ const Navigation = () => {
     <div className={css.navigation}>
       <nav className={css.navigation_bar}>
         {Object.values(NavigationLinks).map((link) => (
-          <span className={css.navlink}>{link}</span>
+          <span key={link} className={css.navlink}>
+            {link}
+          </span>
         ))}
       </nav>
     </div>
