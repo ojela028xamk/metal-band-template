@@ -1,2 +1,15 @@
 .band {
+  padding: 1em;
+
+  .band_members {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+
+    .member {
+      padding: 1em;
+      border: 2px solid black;
+      height: auto;
+    }
+  }
 }
