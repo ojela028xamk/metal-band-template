@@ -4,9 +4,17 @@
     flex-direction: row;
 
     .navlink {
+      flex: 1;
+      text-align: center;
       background-color: black;
       color: white;
       padding: 1em;
+
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+      }
     }
   }
 }

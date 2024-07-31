@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <div className={css.main}>
       <Navigation />
-      <h2>Metal band template</h2>
     </div>
   );
 };

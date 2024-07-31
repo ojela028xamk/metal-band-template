@@ -1,13 +1,21 @@
 import css from "./Navigation.module.scss";
 
+enum NavigationLinks {
+  BAND = "Band",
+  MUSIC = "Music",
+  PHOTOS = "Photos",
+  EVENTS = "Events",
+}
+
 const Navigation = () => {
   return (
     <div className={css.navigation}>
       <nav className={css.navigation_bar}>
-        <span className={css.navlink}>Band</span>
-        <span className={css.navlink}>Music</span>
-        <span className={css.navlink}>Photos</span>
-        <span className={css.navlink}>Events</span>
+        {Object.values(NavigationLinks).map((link) => (
+          <span key={link} className={css.navlink}>
+            {link}
+          </span>
+        ))}
       </nav>
     </div>
   );
