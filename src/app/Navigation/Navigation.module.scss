@@ -1,0 +1,12 @@
+.navigation {
+  .navigation_bar {
+    display: flex;
+    flex-direction: row;
+
+    .navlink {
+      background-color: black;
+      color: white;
+      padding: 1em;
+    }
+  }
+}
