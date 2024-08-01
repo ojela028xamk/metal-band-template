@@ -1,0 +1,35 @@
+.band {
+  padding: 1em;
+
+  .band_members {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .member {
+      display: flex;
+      padding: 1em;
+      border: 2px solid black;
+
+      .member_image {
+        flex: 1;
+        padding: 0.5em;
+      }
+
+      .member_description {
+        flex: 2;
+        padding: 0.5em;
+
+        h1 {
+          margin-top: 0.2em;
+          margin-bottom: 0.2em;
+        }
+
+        p {
+          font-size: 1.2em;
+          white-space: pre-line;
+        }
+      }
+    }
+  }
+}
