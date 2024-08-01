@@ -10,28 +10,28 @@ export const BandMembers: Member[] = [
     name: "Vespera Grim",
     role: "Singer",
     description:
-      "Vespera Grim is an enigmatic frontwoman known for her haunting, powerful vocals that seamlessly blend melodic beauty with fierce growls. With an imposing stage presence, she captivates audiences with her dark, gothic aesthetic—clad in leather and draped in flowing black fabrics, her striking silver hair and intricate body tattoos tell stories of battles fought and lost. Vespera's lyrics delve into themes of despair, rebellion, and the complexities of the human psyche, echoing the raw emotional intensity of the band's heavy, atmospheric sound. Her ability to engage with fans through both her music and an immersive performance style makes her a magnetic force in the metal scene",
-    image: "./",
+      "Vespera Grim is an enigmatic frontwoman known for her haunting, powerful vocals that seamlessly blend melodic beauty with fierce growls. Vespera's lyrics delve into themes of despair, rebellion, and the complexities of the human psyche, echoing the raw emotional intensity of the band's heavy, atmospheric sound. Her ability to engage with fans through both her music and an immersive performance style makes her a magnetic force in the metal scene.",
+    image: "/Vespera Grim.jpeg",
   },
   {
     name: "Victor 'Thunder' Malone",
     role: "Bass",
     description:
-      "Hailing from the gritty streets of Detroit, Victor 'Thunder' Malone is the thunderous bassist behind the band. With a powerful stage presence and a penchant for intricate finger work, Victor crafts deep, rumbling bass lines that lay the foundation for the band’s bone-crushing sound. Clad in leather and chains, he captivates audiences not only with his technical prowess but also with his electrifying energy, often bouncing between genres of metal while keeping true to the raw spirit of rock. When he's not shredding on stage, Victor spends his time collecting vintage bass guitars and nurturing the next generation of metal musicians through workshops",
-    image: "./",
+      "Hailing from the gritty streets of Detroit, Victor 'Thunder' Malone is the thunderous bassist behind the band. With a powerful stage presence and a penchant for intricate finger work, Victor crafts deep, rumbling bass lines that lay the foundation for the band’s bone-crushing sound. Clad in leather and chains, he captivates audiences not only with his technical prowess but also with his electrifying energy, often bouncing between genres of metal while keeping true to the raw spirit of rock. When he's not shredding on stage, Victor spends his time collecting vintage bass guitars and nurturing the next generation of metal musicians through workshops.",
+    image: "/Victor Malone.jpeg",
   },
   {
     name: "Axel Vortex",
     role: "Guitar",
     description:
-      "With wild, shoulder-length hair and a magnetic stage presence, Axel Vortex is the quintessential metal guitarist, known for his electrifying riffs and technical prowess. Hailing from the heart of a bustling city, he blends elements of thrash and progressive metal, creating a sound that is both aggressive and intricate. Axel's signature guitar, a custom-designed seven-string beast adorned with sharp, angular designs, complements his high-octane style. Offstage, he is a passionate advocate for music education, inspiring the next generation of musicians through workshops and masterclasses. His electrifying solos and dynamic performances captivate audiences, making him a formidable force in the metal scene.",
-    image: "./",
+      "With wild, shoulder-length hair and a magnetic stage presence, Axel Vortex is the quintessential metal guitarist, known for his electrifying riffs and technical prowess. Hailing from the heart of a bustling city, he blends elements of thrash and progressive metal, creating a sound that is both aggressive and intricate. Offstage, he is a passionate advocate for music education, inspiring the next generation of musicians through workshops and masterclasses. His electrifying solos and dynamic performances captivate audiences, making him a formidable force in the metal scene.",
+    image: "/Axel Vortex.jpeg",
   },
   {
     name: "Raven Ashford",
     role: "Drums",
     description:
-      "Raven Ashford is a powerhouse drummer known for her thunderous beats and intricate rhythms. Standing out with her striking crimson hair and fierce stage presence, she combines technical precision with raw energy, captivating audiences worldwide. Raven’s unique drumming style melds elements of progressive metal and classic thrash, and her relentless passion for music drives the sound of her band. Offstage, she’s an advocate for mental health awareness in the music industry, using her platform to inspire others to embrace their creativity and strength",
-    image: "./",
+      "Raven Ashford is a powerhouse drummer known for her thunderous beats and intricate rhythms. Standing out with her striking crimson hair and fierce stage presence, she combines technical precision with raw energy, captivating audiences worldwide. Raven’s unique drumming style melds elements of progressive metal and classic thrash, and her relentless passion for music drives the sound of her band. Offstage, she’s an advocate for mental health awareness in the music industry, using her platform to inspire others to embrace their creativity and strength.",
+    image: "/Raven Ashford.jpeg",
   },
 ];
