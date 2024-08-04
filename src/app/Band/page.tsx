@@ -1,12 +1,12 @@
 import Image from "next/image";
-import css from "./Band.module.scss";
-import { BandMembers } from "./Members";
+import css from "./band.module.scss";
+import { bandMembers } from "./members";
 
 const Band = () => {
   return (
     <div className={css.band}>
       <div className={css.band_members}>
-        {BandMembers.map((member) => (
+        {bandMembers.map((member) => (
           <div key={member.name} className={css.member}>
             <div className={css.member_description}>
               <h1>{member.name}</h1>

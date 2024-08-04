@@ -5,7 +5,7 @@ type Member = {
   image: string;
 };
 
-export const BandMembers: Member[] = [
+export const bandMembers: Member[] = [
   {
     name: "Vespera Grim",
     role: "Singer",
