@@ -13,7 +13,7 @@ const Music = () => {
           </p>
           <ol>
             {album.tracks.map((track) => (
-              <li>{track}</li>
+              <li key={track}>{track}</li>
             ))}
           </ol>
         </div>
