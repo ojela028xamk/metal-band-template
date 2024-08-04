@@ -1,4 +1,4 @@
-import css from "./Music.module.scss";
+import css from "./music.module.scss";
 
 const Music = () => {
   return (

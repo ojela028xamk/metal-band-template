@@ -1,10 +1,11 @@
+import Link from "next/link";
 import css from "./Navigation.module.scss";
 
 enum NavigationLinks {
-  BAND = "Band",
-  MUSIC = "Music",
-  PHOTOS = "Photos",
-  EVENTS = "Events",
+  BAND = "band",
+  MUSIC = "music",
+  PHOTOS = "photos",
+  EVENTS = "events",
 }
 
 const Navigation = () => {
@@ -12,9 +13,9 @@ const Navigation = () => {
     <div className={css.navigation}>
       <nav className={css.navigation_bar}>
         {Object.values(NavigationLinks).map((link) => (
-          <span key={link} className={css.navlink}>
+          <Link key={link} className={css.navlink} href={link}>
             {link}
-          </span>
+          </Link>
         ))}
       </nav>
     </div>

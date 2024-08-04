@@ -1,6 +1,6 @@
 import Image from "next/image";
-import css from "./Band.module.scss";
-import { BandMembers } from "./Members";
+import css from "./band.module.scss";
+import { BandMembers } from "./members";
 
 const Band = () => {
   return (
