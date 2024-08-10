@@ -4,7 +4,7 @@ type BandEvent = {
   date: string;
 };
 
-const bandEvents: BandEvent[] = [
+export const bandEvents: BandEvent[] = [
   {
     city: "London, UK",
     location: "The O2 Arena",
