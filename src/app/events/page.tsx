@@ -7,7 +7,7 @@ const Events = () => {
       <h1>Events</h1>
       <table>
         {bandEvents.map((event) => (
-          <tr>
+          <tr key={event.city}>
             <td>{event.date}</td>
             <td>{event.location}</td>
             <td>{event.city}</td>
