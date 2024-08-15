@@ -1,0 +1,11 @@
+.photos {
+  margin: 1em;
+
+  .photos_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .band_photo {
+      margin: 1em;
+    }
+  }
+}
