@@ -7,15 +7,18 @@ const Photos = () => {
   return (
     <div className={css.photos}>
       <h1>Photos</h1>
-      {bandPhotos.map((photo) => (
-        <Image
-          className={css.band_photo}
-          src={photo.url}
-          alt={photo.author}
-          width={200}
-          height={200}
-        />
-      ))}
+      <div className={css.photos_grid}>
+        {bandPhotos.map((photo, index) => (
+          <Image
+            key={index}
+            className={css.band_photo}
+            src={photo.url}
+            alt={photo.author}
+            width={250}
+            height={250}
+          />
+        ))}
+      </div>
     </div>
   );
 };
