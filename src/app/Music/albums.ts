@@ -3,6 +3,7 @@ type Album = {
   tracks: string[];
   year: number;
   type: "Album" | "EP";
+  url: string;
 };
 
 export const bandAlbums: Album[] = [
@@ -22,6 +23,7 @@ export const bandAlbums: Album[] = [
     ],
     year: 2024,
     type: "Album",
+    url: "/Whispers of the Forsaken Woods.png",
   },
   {
     album_name: "Ashes of a Withering World",
@@ -39,12 +41,14 @@ export const bandAlbums: Album[] = [
     ],
     year: 2022,
     type: "Album",
+    url: "/Ashes of a Withering World.png",
   },
   {
     album_name: "Embers of Desolation",
     tracks: ["Inferno's Call", "Ashen Rebirth", "Blaze of Ruin"],
     year: 2020,
     type: "EP",
+    url: "/Embers of Desolation.png",
   },
   {
     album_name: "Fires of Valour",
@@ -62,11 +66,13 @@ export const bandAlbums: Album[] = [
     ],
     year: 2019,
     type: "Album",
+    url: "/Fires of Valour.png",
   },
   {
     album_name: "Serpent's Wrath",
     tracks: ["Venomous Visions", "Shed Skin Symphony", "Crowning Constrictor"],
     year: 2017,
     type: "EP",
+    url: "/Serpent's Wrath.png",
   },
 ];
