@@ -1,8 +1,8 @@
-import Link from "next/link";
 import css from "./Navigation.module.scss";
-import Image from "next/image";
+import NavigationCard from "./NavigationCard";
+import { Fragment } from "react";
 
-enum NavigationLinks {
+export enum NavigationLinks {
   BAND = "band",
   MUSIC = "music",
   PHOTOS = "photos",
@@ -12,14 +12,11 @@ enum NavigationLinks {
 const Navigation = () => {
   return (
     <div className={css.navigation}>
-      <Link href="/">
-        <Image width={616} height={169} src="/logo.png" alt="Logo" />
-      </Link>
       <nav className={css.navigation_bar}>
         {Object.values(NavigationLinks).map((link) => (
-          <Link key={link} className={css.navlink} href={link}>
-            {link}
-          </Link>
+          <Fragment key={link}>
+            <NavigationCard link={link} />
+          </Fragment>
         ))}
       </nav>
     </div>
