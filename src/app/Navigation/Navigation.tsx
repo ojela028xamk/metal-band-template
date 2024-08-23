@@ -3,13 +3,7 @@ import css from "./Navigation.module.scss";
 import NavigationCard from "./NavigationCard";
 import { Fragment } from "react";
 import Link from "next/link";
-
-export enum NavigationLinks {
-  BAND = "band",
-  MUSIC = "music",
-  PHOTOS = "photos",
-  EVENTS = "events",
-}
+import { navigationList } from "./navigationList";
 
 const Navigation = () => {
   return (
@@ -23,9 +17,9 @@ const Navigation = () => {
         />
       </Link>
       <nav className={css.navigation_bar}>
-        {Object.values(NavigationLinks).map((link) => (
-          <Fragment key={link}>
-            <NavigationCard link={link} />
+        {navigationList.map((navItem) => (
+          <Fragment key={navItem.link}>
+            <NavigationCard link={navItem.link} />
           </Fragment>
         ))}
       </nav>
