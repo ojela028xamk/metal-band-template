@@ -12,15 +12,16 @@ const NavigationCard = ({ link }: NavigationCardProps) => {
 
   return (
     <div className={css.navigation_card}>
-      <Image
-        className={css.card_image}
-        src={"/card_images/band_card.jpg"}
-        alt={"Card"}
-        width="200"
-        height="200"
-      />
       <Link className={css.card_link} href={link}>
-        {linkName}
+        <Image
+          className={css.card_image}
+          src={"/card_images/band_card.jpg"}
+          alt={"Card"}
+          width={0}
+          height={0}
+          layout="responsive"
+        />
+        <span className={css.card_text}>{linkName}</span>
       </Link>
     </div>
   );

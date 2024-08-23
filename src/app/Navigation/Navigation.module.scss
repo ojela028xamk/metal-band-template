@@ -1,8 +1,10 @@
 .navigation {
+  text-align: center;
+
   .navigation_bar {
+    max-width: 720px;
     margin: auto;
     display: flex;
     flex-direction: row;
-    width: 1028px;
   }
 }
