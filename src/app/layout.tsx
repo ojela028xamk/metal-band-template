@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import Navigation from "./Navigation/Navigation";
+import { Metal_Mania } from "next/font/google";
 import css from "./page.module.scss";
+
+const metalMania = Metal_Mania({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={css.layout}>
+      <body className={`${css.layout} ${metalMania.className}`}>
         <Navigation />
         {children}
       </body>
