@@ -19,7 +19,7 @@ const Navigation = () => {
       <nav className={css.navigation_bar}>
         {navigationList.map((navItem) => (
           <Fragment key={navItem.link}>
-            <NavigationCard link={navItem.link} />
+            <NavigationCard navItem={navItem} />
           </Fragment>
         ))}
       </nav>

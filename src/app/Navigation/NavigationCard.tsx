@@ -1,22 +1,22 @@
 import Link from "next/link";
 import css from "./NavigationCard.module.scss";
 import Image from "next/image";
-import { NavigationLinks } from "./navigationList";
+import { NavigationItem, NavigationLinks } from "./navigationList";
 
 type NavigationCardProps = {
-  link: NavigationLinks;
+  navItem: NavigationItem;
 };
 
-const NavigationCard = ({ link }: NavigationCardProps) => {
-  const linkName = link.charAt(0).toUpperCase() + link.slice(1);
+const NavigationCard = ({ navItem }: NavigationCardProps) => {
+  const linkName = navItem.link.charAt(0).toUpperCase() + navItem.link.slice(1);
 
   return (
     <div className={css.navigation_card}>
-      <Link className={css.card_link} href={link}>
+      <Link className={css.card_link} href={navItem.link}>
         <Image
           className={css.card_image}
-          src={"/card_images/band_card.jpg"}
-          alt={"Card"}
+          src={navItem.image}
+          alt={navItem.alt}
           width={0}
           height={0}
           layout="responsive"
