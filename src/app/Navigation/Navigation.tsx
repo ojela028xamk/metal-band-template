@@ -20,7 +20,7 @@ const Navigation = () => {
     >
       <Link href="/">
         <Image
-          src={"/logo.png"}
+          src={"/logo_alternative.png"}
           alt={"Beast Wihin Logo"}
           width={0}
           height={0}
