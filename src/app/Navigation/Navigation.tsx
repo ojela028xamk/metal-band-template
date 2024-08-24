@@ -1,19 +1,30 @@
+"use client";
 import Image from "next/image";
 import css from "./Navigation.module.scss";
 import NavigationCard from "./NavigationCard";
 import { Fragment } from "react";
 import Link from "next/link";
 import { navigationList } from "./navigationList";
+import { usePathname } from "next/navigation";
 
 const Navigation = () => {
+  const currentPath = usePathname();
+
   return (
-    <div className={css.navigation}>
+    <div
+      className={css.navigation}
+      style={{
+        width: currentPath === "/" ? "1028px" : "720px",
+        top: currentPath === "/" ? "10vh" : "0px",
+      }}
+    >
       <Link href="/">
         <Image
-          src={"/logo.png"}
+          src={"/logo_alternative.png"}
           alt={"Beast Wihin Logo"}
-          width={340}
-          height={100}
+          width={0}
+          height={0}
+          layout="responsive"
         />
       </Link>
       <nav className={css.navigation_bar}>
