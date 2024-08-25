@@ -10,6 +10,7 @@
       display: flex;
       padding: 1em;
       border: 2px solid black;
+      background-color: white;
 
       .member_image {
         flex: 1;
@@ -32,4 +33,17 @@
       }
     }
   }
+}
+
+.band_background_image {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
 }

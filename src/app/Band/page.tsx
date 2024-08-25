@@ -6,6 +6,14 @@ const Band = () => {
   return (
     <div className={css.band}>
       <div className={css.band_members}>
+        <Image
+          className={css.band_background_image}
+          src="/background_images/band_background.png"
+          alt="Band Background"
+          width={0}
+          height={0}
+          layout="responsive"
+        />
         {bandMembers.map((member) => (
           <div key={member.name} className={css.member}>
             <div className={css.member_description}>
