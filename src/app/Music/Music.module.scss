@@ -1,5 +1,41 @@
+@import "../main";
+
 .music {
-  border: 2px solid black;
   margin: 1em;
   padding: 1em;
+
+  .album {
+    display: flex;
+    border: 2px solid black;
+    padding: 1em;
+
+    .album_image {
+      flex: 1;
+      .image {
+      }
+    }
+
+    .album_info {
+      flex: 2;
+      padding: 1em;
+
+      .album_header {
+        @include header_text;
+        margin: 0;
+        font-size: 2em;
+      }
+
+      .album_paragraph {
+        font-family: "emoji";
+        font-size: 1.5em;
+        color: rgb(61, 61, 61);
+      }
+
+      .album_tracks {
+        font-family: "emoji";
+        font-size: 1.2em;
+        color: rgb(61, 61, 61);
+      }
+    }
+  }
 }
