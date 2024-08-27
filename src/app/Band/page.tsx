@@ -17,7 +17,7 @@ const Band = () => {
         {bandMembers.map((member) => (
           <div key={member.name} className={css.member}>
             <div className={css.member_description}>
-              <h1 className={css.member_name}>{member.name}</h1>
+              <h1 className={css.member_header}>{member.name}</h1>
               <p className={css.member_paragraph}>{member.description}</p>
             </div>
             <div className={css.member_image}>
