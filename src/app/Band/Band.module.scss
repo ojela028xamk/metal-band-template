@@ -28,13 +28,13 @@
         flex: 3;
         padding: 0.5em;
 
-        .member_header {
+        .member_name {
           @include header_text;
           margin: 0;
           font-size: 2.5em;
         }
 
-        .member_paragraph {
+        .member_description {
           font-family: "emoji";
           font-size: 1.3em;
           color: rgb(61, 61, 61);

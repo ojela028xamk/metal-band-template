@@ -19,13 +19,14 @@
       flex: 2;
       padding: 1em;
 
-      .album_header {
+      .album_name {
         @include header_text;
         margin: 0;
         font-size: 2em;
       }
 
-      .album_paragraph {
+      .album_year,
+      .album_type {
         font-family: "emoji";
         font-size: 1.5em;
         color: rgb(61, 61, 61);
