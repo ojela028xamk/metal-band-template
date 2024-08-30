@@ -27,15 +27,20 @@
 
       .album_year,
       .album_type {
+        margin: 10px 0 0 0;
         font-family: "emoji";
-        font-size: 1.5em;
-        color: rgb(61, 61, 61);
+        font-size: 1.2em;
+        color: rgb(105, 105, 105);
       }
 
       .album_tracks {
         font-family: "emoji";
         font-size: 1.2em;
         color: rgb(61, 61, 61);
+
+        .album_item {
+          padding: 7px 0;
+        }
       }
     }
   }

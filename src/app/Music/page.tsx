@@ -19,11 +19,13 @@ const Music = () => {
           </div>
           <div className={css.album_info}>
             <h3 className={css.album_name}>{album.album_name}</h3>
-            <p className={css.album_year}>{album.year}</p>
-            <p className={css.album_type}>{album.type}</p>
+            <p className={css.album_year}>Release Year: {album.year}</p>
+            <p className={css.album_type}>Type: {album.type}</p>
             <ol className={css.album_tracks}>
               {album.tracks.map((track) => (
-                <li key={track}>{track}</li>
+                <li key={track} className={css.album_item}>
+                  {track}
+                </li>
               ))}
             </ol>
           </div>
