@@ -6,8 +6,10 @@
 
   .album {
     display: flex;
-    border: 2px solid black;
     padding: 1em;
+    margin: 1.2em;
+    background-color: rgb(0, 0, 0, 0.7);
+    color: rgb(223, 223, 223);
 
     .album_image {
       flex: 1;
@@ -23,6 +25,7 @@
         @include header_text;
         margin: 0;
         font-size: 2em;
+        padding-left: 20px;
       }
 
       .album_year,
@@ -30,18 +33,30 @@
         margin: 10px 0 0 0;
         font-family: "emoji";
         font-size: 1.2em;
-        color: rgb(105, 105, 105);
+        padding-left: 20px;
       }
 
       .album_tracks {
         font-family: "emoji";
         font-size: 1.2em;
-        color: rgb(61, 61, 61);
 
         .album_item {
-          padding: 7px 0;
+          padding: 5px 0;
         }
       }
     }
   }
+}
+
+.music_background_image {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
 }

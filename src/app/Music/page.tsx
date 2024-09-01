@@ -5,6 +5,14 @@ import css from "./music.module.scss";
 const Music = () => {
   return (
     <div className={css.music}>
+      <Image
+        className={css.music_background_image}
+        src="/background_images/music_background.png"
+        alt="Music Background"
+        width={0}
+        height={0}
+        layout="responsive"
+      />
       {bandAlbums.map((album) => (
         <div className={css.album} key={album.album_name}>
           <div className={css.album_image}>
