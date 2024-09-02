@@ -17,7 +17,6 @@ const Music = () => {
         <div className={css.album} key={album.album_name}>
           <div className={css.album_image}>
             <Image
-              className={css.image}
               src={album.url}
               alt={album.album_name}
               height={0}
