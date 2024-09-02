@@ -1,5 +1,62 @@
+@import "../main";
+
 .music {
-  border: 2px solid black;
   margin: 1em;
   padding: 1em;
+
+  .album {
+    display: flex;
+    padding: 1em;
+    margin: 1.2em;
+    background-color: rgb(0, 0, 0, 0.7);
+    color: rgb(223, 223, 223);
+
+    .album_image {
+      flex: 1;
+      .image {
+      }
+    }
+
+    .album_info {
+      flex: 2;
+      padding: 1em;
+
+      .album_name {
+        @include header_text;
+        margin: 0;
+        font-size: 2em;
+        padding-left: 20px;
+      }
+
+      .album_year,
+      .album_type {
+        margin: 10px 0 0 0;
+        font-family: "emoji";
+        font-size: 1.2em;
+        padding-left: 20px;
+      }
+
+      .album_tracks {
+        font-family: "emoji";
+        font-size: 1.2em;
+
+        .album_item {
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+}
+
+.music_background_image {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
 }
