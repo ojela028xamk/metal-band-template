@@ -14,8 +14,8 @@ const Photos = () => {
             className={css.band_photo}
             src={photo.url}
             alt={photo.author}
-            width={250}
-            height={250}
+            width={200}
+            height={200}
           />
         ))}
       </div>
