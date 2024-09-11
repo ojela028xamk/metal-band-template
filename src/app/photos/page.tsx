@@ -20,6 +20,14 @@ const Photos = () => {
       {modal && (
         <PhotoModal toggleModal={toggleModal} modalPhoto={modalPhoto} />
       )}
+      <Image
+        className={css.photos_background_image}
+        src="/band_photo_5.jpeg"
+        alt="Photos Background"
+        width={0}
+        height={0}
+        layout="responsive"
+      />
       <div className={css.photos_grid}>
         {bandPhotos.map((photo, index) => (
           <Image
