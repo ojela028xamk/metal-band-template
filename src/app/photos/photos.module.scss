@@ -4,11 +4,15 @@
   .photos_grid {
     display: grid;
     grid-template-columns: auto auto auto;
+    gap: 1em;
+
     .band_photo {
       height: 416px !important;
       object-fit: cover;
+
       &:hover {
         cursor: pointer;
+        filter: contrast(0.5);
       }
     }
   }
