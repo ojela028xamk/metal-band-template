@@ -5,7 +5,11 @@
     display: grid;
     grid-template-columns: auto auto auto;
     .band_photo {
-      margin: 1em;
+      height: 416px !important;
+      object-fit: cover;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

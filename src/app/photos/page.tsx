@@ -2,11 +2,24 @@
 import Image from "next/image";
 import css from "./photos.module.scss";
 import { bandPhotos } from "./photosList";
+import PhotoModal from "./photoModal";
+import { useToggle } from "react-use";
+import { useState } from "react";
 
 const Photos = () => {
+  const [modal, toggleModal] = useToggle(false);
+  const [modalPhoto, setModalPhoto] = useState<string>("");
+
+  const handleModal = (photoUrl: string) => {
+    setModalPhoto(photoUrl);
+    toggleModal();
+  };
+
   return (
     <div className={css.photos}>
-      <h1>Photos</h1>
+      {modal && (
+        <PhotoModal toggleModal={toggleModal} modalPhoto={modalPhoto} />
+      )}
       <div className={css.photos_grid}>
         {bandPhotos.map((photo, index) => (
           <Image
@@ -14,8 +27,10 @@ const Photos = () => {
             className={css.band_photo}
             src={photo.url}
             alt={photo.author}
-            width={250}
-            height={250}
+            width={0}
+            height={0}
+            layout="responsive"
+            onClick={() => handleModal(photo.url)}
           />
         ))}
       </div>
