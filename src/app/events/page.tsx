@@ -1,21 +1,25 @@
+import Image from "next/image";
 import { bandEvents } from "./eventList";
 import css from "./events.module.scss";
 
 const Events = () => {
   return (
     <div className={css.events}>
-      <h1>Events</h1>
-      <table>
-        <tbody>
-          {bandEvents.map((event) => (
-            <tr key={event.city}>
-              <td>{event.date}</td>
-              <td>{event.location}</td>
-              <td>{event.city}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <Image
+        className={css.events_background_image}
+        src="/band_photo_3.jpeg"
+        alt="Music Background"
+        width={0}
+        height={0}
+        layout="responsive"
+      />
+      {bandEvents.map((event) => (
+        <div className={css.events_row} key={event.city}>
+          <span>{event.date}</span>
+          <span>{event.location}</span>
+          <span>{event.city}</span>
+        </div>
+      ))}
     </div>
   );
 };
