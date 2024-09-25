@@ -1,10 +1,47 @@
 .events {
+  font-family: "emoji";
   margin: 1em;
-  table {
-    font-size: 1.5em;
+  padding: 1em;
+  background-color: rgb(0, 0, 0, 0.7);
 
-    td {
+  .events_row {
+    display: flex;
+    padding: 0.5em 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid gray;
+
+    span {
       padding: 0.5em;
     }
+
+    span:nth-child(1) {
+      flex: 1;
+      color: gray;
+    }
+
+    span:nth-child(2) {
+      flex: 1;
+      color: rgb(223, 223, 223);
+    }
+
+    span:nth-child(3) {
+      flex: 4;
+      color: gray;
+      text-align: right;
+    }
   }
+}
+
+.events_background_image {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
+  filter: grayscale(1);
 }
