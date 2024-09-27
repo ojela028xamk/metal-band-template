@@ -6,7 +6,9 @@ import BackgroundImage from "../common/backgroundImage";
 const Music = () => {
   return (
     <div className={css.music}>
-      <BackgroundImage source={"/background_images/music_background.png"} />
+      <BackgroundImage
+        source={"/background_images/background_image_music.jpg"}
+      />
       {bandAlbums.map((album) => (
         <div className={css.album} key={album.album_name}>
           <div className={css.album_image}>

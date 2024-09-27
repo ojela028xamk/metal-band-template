@@ -5,7 +5,9 @@ import BackgroundImage from "../common/backgroundImage";
 const Events = () => {
   return (
     <div className={css.events}>
-      <BackgroundImage source={"/band_photo_3.jpeg"} />
+      <BackgroundImage
+        source={"/background_images/background_image_events.jpg"}
+      />
       {bandEvents.map((event) => (
         <div className={css.events_row} key={event.city}>
           <span>{event.date}</span>
