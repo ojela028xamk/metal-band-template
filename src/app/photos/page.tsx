@@ -5,6 +5,7 @@ import { bandPhotos } from "./photosList";
 import PhotoModal from "./photoModal";
 import { useToggle } from "react-use";
 import { useState } from "react";
+import BackgroundImage from "../common/backgroundImage";
 
 const Photos = () => {
   const [modal, toggleModal] = useToggle(false);
@@ -20,13 +21,8 @@ const Photos = () => {
       {modal && (
         <PhotoModal toggleModal={toggleModal} modalPhoto={modalPhoto} />
       )}
-      <Image
-        className={css.photos_background_image}
-        src="/band_photo_5.jpeg"
-        alt="Photos Background"
-        width={0}
-        height={0}
-        layout="responsive"
+      <BackgroundImage
+        source={"/background_images/background_image_photos.jpg"}
       />
       <div className={css.photos_grid}>
         {bandPhotos.map((photo, index) => (

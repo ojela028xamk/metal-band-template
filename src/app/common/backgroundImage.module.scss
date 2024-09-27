@@ -1,0 +1,5 @@
+@import "../main";
+
+.background_image {
+  @include background_image;
+}

@@ -1,18 +1,14 @@
 import Image from "next/image";
 import css from "./band.module.scss";
 import { bandMembers } from "./members";
+import BackgroundImage from "../common/backgroundImage";
 
 const Band = () => {
   return (
     <div className={css.band}>
       <div className={css.band_members}>
-        <Image
-          className={css.band_background_image}
-          src="/background_images/band_background.png"
-          alt="Band Background"
-          width={0}
-          height={0}
-          layout="responsive"
+        <BackgroundImage
+          source={"/background_images/background_image_band.jpg"}
         />
         {bandMembers.map((member) => (
           <div key={member.name} className={css.member}>
