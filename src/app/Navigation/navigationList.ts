@@ -29,7 +29,7 @@ export const navigationList: NavigationItem[] = [
   },
   {
     link: NavigationLinks.EVENTS,
-    image: "/card_images/events_card.png",
+    image: "/card_images/events_card.jpg",
     alt: "Imege by: David Bartus: https://www.pexels.com/fi-fi/kuva/690779/",
   },
 ];
