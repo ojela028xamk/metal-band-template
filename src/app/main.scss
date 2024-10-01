@@ -1,8 +1,7 @@
 @mixin header_text {
   letter-spacing: 3px;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: black;
-  color: white;
+  color: rgb(223, 223, 223);
+  font-weight: 100;
 }
 
 @mixin background_image {
