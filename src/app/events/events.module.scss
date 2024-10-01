@@ -1,3 +1,5 @@
+@import "../main";
+
 .events {
   font-family: "emoji";
   margin: 1em;
@@ -8,7 +10,7 @@
     display: flex;
     padding: 0.5em 0;
     font-size: 1.5em;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid $gray;
 
     span {
       padding: 0.5em;
@@ -16,17 +18,17 @@
 
     span:nth-child(1) {
       flex: 1;
-      color: gray;
+      color: $gray;
     }
 
     span:nth-child(2) {
       flex: 1;
-      color: rgb(223, 223, 223);
+      color: $white;
     }
 
     span:nth-child(3) {
       flex: 4;
-      color: gray;
+      color: $gray;
       text-align: right;
     }
   }

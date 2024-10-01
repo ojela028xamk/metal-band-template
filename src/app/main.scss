@@ -1,6 +1,10 @@
+// Global color variables
+$white: #dfdfdf;
+$gray: gray;
+
 @mixin header_text {
   letter-spacing: 3px;
-  color: rgb(223, 223, 223);
+  color: $white;
   font-weight: 100;
 }
 
