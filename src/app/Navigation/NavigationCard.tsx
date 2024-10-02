@@ -1,7 +1,7 @@
 import Link from "next/link";
 import css from "./NavigationCard.module.scss";
 import Image from "next/image";
-import { NavigationItem, NavigationLinks } from "./navigationList";
+import { NavigationItem } from "./navigationList";
 
 type NavigationCardProps = {
   navItem: NavigationItem;

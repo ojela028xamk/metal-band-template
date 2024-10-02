@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Navigation from "./Navigation/Navigation";
+import Navigation from "./navigation/navigation";
 import { Metal_Mania } from "next/font/google";
 import css from "./page.module.scss";
 

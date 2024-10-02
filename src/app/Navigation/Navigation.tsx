@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import css from "./Navigation.module.scss";
-import NavigationCard from "./NavigationCard";
+import css from "./navigation.module.scss";
+import NavigationCard from "./navigationCard";
 import { Fragment } from "react";
 import Link from "next/link";
 import { navigationList } from "./navigationList";

@@ -1,8 +1,11 @@
+// Global color variables
+$white: #dfdfdf;
+$gray: gray;
+
 @mixin header_text {
   letter-spacing: 3px;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: black;
-  color: white;
+  color: $white;
+  font-weight: 100;
 }
 
 @mixin background_image {
