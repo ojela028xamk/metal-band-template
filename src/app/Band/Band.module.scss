@@ -1,7 +1,7 @@
 @import "../main";
 
 .band {
-  padding: 1em;
+  margin: $content-margin;
   color: $white;
 
   .band_members {
@@ -13,7 +13,7 @@
       display: flex;
       flex-direction: row;
       padding: 1em;
-      background-color: rgb(0, 0, 0, 0.7);
+      background-color: $background-transparent;
 
       .member_image {
         flex: 1;

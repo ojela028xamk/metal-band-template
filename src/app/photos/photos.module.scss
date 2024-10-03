@@ -1,5 +1,7 @@
+@import "../main.scss";
+
 .photos {
-  margin: 1em;
+  margin: $content-margin;
 
   .photos_grid {
     display: grid;
