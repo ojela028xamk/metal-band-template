@@ -2,6 +2,9 @@
 $white: #dfdfdf;
 $gray: gray;
 
+// Other
+$content-margin: 1em;
+
 @mixin header_text {
   letter-spacing: 3px;
   color: $white;

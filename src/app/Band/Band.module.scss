@@ -1,7 +1,7 @@
 @import "../main";
 
 .band {
-  padding: 1em;
+  margin: $content-margin;
   color: $white;
 
   .band_members {

@@ -2,8 +2,7 @@
 
 .events {
   font-family: "emoji";
-  margin: 1em;
-  padding: 1em;
+  margin: $content-margin;
   background-color: rgb(0, 0, 0, 0.7);
 
   .events_row {
