@@ -3,7 +3,7 @@
 .events {
   font-family: "emoji";
   margin: $content-margin;
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: $background-transparent;
 
   .events_row {
     display: flex;

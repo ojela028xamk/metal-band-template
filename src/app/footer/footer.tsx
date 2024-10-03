@@ -1,9 +1,16 @@
+"use client";
 import Image from "next/image";
 import css from "./footer.module.scss";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const currentPath = usePathname();
+
   return (
-    <div className={css.footer}>
+    <div
+      className={css.footer}
+      style={{ display: currentPath === "/" ? "none" : "flex" }}
+    >
       <span className={css.footer_text}>Powered by: </span>
       <Image
         className={css.footer_image}

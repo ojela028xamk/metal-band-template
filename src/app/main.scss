@@ -4,6 +4,7 @@ $gray: gray;
 
 // Other
 $content-margin: 1em;
+$background-transparent: rgb(0, 0, 0, 0.7);
 
 @mixin header_text {
   letter-spacing: 3px;

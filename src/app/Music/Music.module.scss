@@ -6,7 +6,7 @@
   .album {
     display: flex;
     padding: 1em;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: $background-transparent;
     color: $white;
 
     .album_image {
