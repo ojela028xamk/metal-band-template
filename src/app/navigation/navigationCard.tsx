@@ -1,5 +1,5 @@
 import Link from "next/link";
-import css from "./NavigationCard.module.scss";
+import css from "./navigationCard.module.scss";
 import Image from "next/image";
 import { NavigationItem } from "./navigationList";
 
