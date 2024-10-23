@@ -23,7 +23,7 @@ export const bandAlbums: Album[] = [
     ],
     year: 2024,
     type: "Album",
-    url: "/Whispers of the Forsaken Woods.png",
+    url: "/album_images/album_photo_5.png",
   },
   {
     album_name: "Ashes of a Withering World",
@@ -41,14 +41,14 @@ export const bandAlbums: Album[] = [
     ],
     year: 2022,
     type: "Album",
-    url: "/Ashes of a Withering World.png",
+    url: "/album_images/album_photo_4.png",
   },
   {
     album_name: "Embers of Desolation",
     tracks: ["Inferno's Call", "Ashen Rebirth", "Blaze of Ruin"],
     year: 2020,
     type: "EP",
-    url: "/Embers of Desolation.png",
+    url: "/album_images/album_photo_3.png",
   },
   {
     album_name: "Fires of Valour",
@@ -66,13 +66,13 @@ export const bandAlbums: Album[] = [
     ],
     year: 2019,
     type: "Album",
-    url: "/Fires of Valour.png",
+    url: "/album_images/album_photo_2.png",
   },
   {
     album_name: "Serpent's Wrath",
     tracks: ["Venomous Visions", "Shed Skin Symphony", "Crowning Constrictor"],
     year: 2017,
     type: "EP",
-    url: "/Serpent's Wrath.png",
+    url: "/album_images/album_photo_1.png",
   },
 ];
