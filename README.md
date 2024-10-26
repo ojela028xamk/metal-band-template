@@ -4,7 +4,7 @@ Website: https://metal-band-template.vercel.app/
 
 This website is a template for a metal/rock/punk band. Some of the images are generated with Microsoft Designer.
 Some images are from Pexels. Text content is created with DeepAI Text Generator.
-Logo and album cover editing is done with Figma.
+Logo and album cover editing is done with Figma. Background video is edited with Adobe Express.
 
 Image credits:
 - Photographer: Vishnu R Nair: https://www.pexels.com/fi-fi/kuva/1105666/
