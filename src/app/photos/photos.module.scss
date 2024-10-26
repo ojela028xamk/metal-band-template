@@ -11,6 +11,7 @@
     .band_photo {
       height: 416px !important;
       object-fit: cover;
+      background-color: $background-transparent;
 
       &:hover {
         cursor: pointer;

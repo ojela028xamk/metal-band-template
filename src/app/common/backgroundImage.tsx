@@ -14,6 +14,7 @@ const BackgroundImage = ({ source }: BackgroundImageProps) => {
       width={0}
       height={0}
       layout="responsive"
+      priority
     />
   );
 };
