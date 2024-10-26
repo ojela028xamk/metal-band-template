@@ -3,7 +3,7 @@
 Website: https://metal-band-template.vercel.app/
 
 This website is a template for a metal/rock/punk band. Some of the images are generated with Microsoft Designer.
-Some images are from Pexels and Pixabay. Text content is created with DeepAI Text Generator.
+Some images are from Pexels. Text content is created with DeepAI Text Generator.
 Logo and album cover editing is done with Figma.
 
 Image credits:
