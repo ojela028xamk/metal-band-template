@@ -26,4 +26,5 @@ Image credits:
 - DeepAI Text Generator
 - Figma
 - Pexels
-- Pixabay
+- SVG Repo
+- Adobe Express
