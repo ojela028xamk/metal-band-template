@@ -11,7 +11,7 @@ const metalMania = Metal_Mania({
 });
 
 export const metadata: Metadata = {
-  title: "Beast Within Band",
+  title: "Beast Within",
   description: "Design by Jere Länsipii",
 };
 
