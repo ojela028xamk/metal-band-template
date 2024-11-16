@@ -3,6 +3,11 @@
   margin: auto;
   text-align: center;
 
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+
   .navigation_bar {
     display: flex;
     flex-direction: row;

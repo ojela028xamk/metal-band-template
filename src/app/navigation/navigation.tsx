@@ -20,11 +20,11 @@ const Navigation = () => {
     >
       <Link href="/">
         <Image
+          className={css.logo}
           src={"/logo_alternative.png"}
           alt={"Beast Wihin Logo"}
-          width={0}
-          height={0}
-          layout="responsive"
+          width={803}
+          height={195}
         />
       </Link>
       <nav className={css.navigation_bar}>
