@@ -19,6 +19,7 @@ const NavigationCard = ({ navItem }: NavigationCardProps) => {
           alt={navItem.alt}
           width={600}
           height={600}
+          layout="responsive"
         />
         <span className={css.card_text}>{linkName}</span>
       </Link>
