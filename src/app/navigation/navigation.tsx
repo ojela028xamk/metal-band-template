@@ -12,18 +12,16 @@ const Navigation = () => {
 
   return (
     <div
-      className={css.navigation}
-      style={{
-        width: currentPath === "/" ? "1028px" : "720px",
-        top: currentPath === "/" ? "10vh" : "0px",
-      }}
+      className={
+        currentPath === "/" ? css.navigation_main : css.navigation_page
+      }
     >
       <Link href="/">
         <Image
           src={"/logo_alternative.png"}
           alt={"Beast Wihin Logo"}
-          width={0}
-          height={0}
+          width={803}
+          height={195}
           layout="responsive"
         />
       </Link>

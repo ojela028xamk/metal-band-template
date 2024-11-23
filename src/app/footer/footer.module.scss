@@ -1,8 +1,9 @@
 @import "../main";
 
 .footer {
+  max-width: 1280px;
   margin: $content-margin;
-  padding: 1em;
+  padding: 1em 0;
   text-align: center;
   font-family: "emoji";
   color: $white;

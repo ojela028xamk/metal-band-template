@@ -1,6 +1,7 @@
 @import "../main.scss";
 
 .photos {
+  max-width: 1280px;
   margin: $content-margin;
 
   .photos_grid {
