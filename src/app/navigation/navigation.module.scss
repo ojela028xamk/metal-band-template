@@ -1,10 +1,21 @@
-.navigation {
-  position: relative;
+.navigation_main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+  max-width: 1024px;
+  top: 10vh;
+}
+
+.navigation_page {
   margin: auto;
   text-align: center;
+  z-index: 1;
+  max-width: 720px;
+}
 
-  .navigation_bar {
-    display: flex;
-    flex-direction: row;
-  }
+.navigation_bar {
+  display: flex;
 }

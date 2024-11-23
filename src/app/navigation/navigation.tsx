@@ -12,11 +12,9 @@ const Navigation = () => {
 
   return (
     <div
-      className={css.navigation}
-      style={{
-        width: currentPath === "/" ? "1028px" : "720px",
-        top: currentPath === "/" ? "10vh" : "0px",
-      }}
+      className={
+        currentPath === "/" ? css.navigation_main : css.navigation_page
+      }
     >
       <Link href="/">
         <Image
