@@ -14,10 +14,10 @@ export const bandMembers: Member[] = [
     image: "/member_images/vespera_grim.jpeg",
   },
   {
-    name: "Victor 'Thunder' Malone",
+    name: "Victor Malone",
     role: "Bass",
     description:
-      "Hailing from the gritty streets of Detroit, Victor 'Thunder' Malone is the thunderous bassist behind the band. With a powerful stage presence and a penchant for intricate finger work, Victor crafts deep, rumbling bass lines that lay the foundation for the band’s bone-crushing sound. \n\nClad in leather and chains, he captivates audiences not only with his technical prowess but also with his electrifying energy, often bouncing between genres of metal while keeping true to the raw spirit of rock. When he's not shredding on stage, Victor spends his time collecting vintage bass guitars and nurturing the next generation of metal musicians through workshops.",
+      "Hailing from the gritty streets of Detroit, Victor Malone is the thunderous bassist behind the band. With a powerful stage presence and a penchant for intricate finger work, Victor crafts deep, rumbling bass lines that lay the foundation for the band’s bone-crushing sound. \n\nClad in leather and chains, he captivates audiences not only with his technical prowess but also with his electrifying energy, often bouncing between genres of metal while keeping true to the raw spirit of rock. When he's not shredding on stage, Victor spends his time collecting vintage bass guitars and nurturing the next generation of metal musicians through workshops.",
     image: "/member_images/victor_malone.jpeg",
   },
   {
