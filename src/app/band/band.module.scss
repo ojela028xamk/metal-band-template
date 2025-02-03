@@ -20,6 +20,11 @@
         flex: 1;
         margin: 0.5em;
         border: 2px solid $white;
+        align-self: center;
+
+        .image {
+          vertical-align: middle;
+        }
       }
 
       .member_description {
