@@ -14,7 +14,7 @@ const metalMania = Metal_Mania({
 const rockFont = localFont({ src: "./chinese_rocks.otf" });
 
 export const metadata: Metadata = {
-  title: "Beast Within",
+  title: "Distortion Band",
   description: "Design by Jere Länsipii",
 };
 

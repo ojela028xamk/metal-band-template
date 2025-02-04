@@ -18,8 +18,8 @@ const Navigation = () => {
     >
       <Link href="/">
         <Image
-          src={"/logo_alternative.png"}
-          alt={"Beast Wihin Logo"}
+          src={"/logo.png"}
+          alt={"Distortion Band Logo"}
           width={803}
           height={195}
           layout="responsive"
