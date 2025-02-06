@@ -19,12 +19,12 @@ export const navigationList: NavigationItem[] = [
   },
   {
     link: NavigationLinks.MUSIC,
-    image: "/card_images/music_card.jpg",
+    image: "/card_images/music_card.png",
     alt: "Image By: Microsoft Designer",
   },
   {
     link: NavigationLinks.PHOTOS,
-    image: "/card_images/photos_card.jpg",
+    image: "/card_images/photos_card.png",
     alt: "Image By: Microsoft Designer",
   },
   {
