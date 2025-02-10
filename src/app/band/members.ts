@@ -17,7 +17,7 @@ export const bandMembers: Member[] = [
     name: "The Bassist",
     role: "Bass",
     description:
-      "The bassist, born in March 12, 1989, is the thunderous bassist of the heavy-hitting metal outfit, 'Distortion Band'. Born and raised in Los Angeles, California, his passion for music began at an early age, with his parents introducing him to the likes of Led Zeppelin and Iron Maiden. \n\nThe bassist began playing bass at 15 and quickly developed a knack for the instrument, honing his skills through years of practice and gigging in various local bands. With a style that blends aggressive precision with melodic flair, the bassist has become a driving force behind Distortion Band's sonic assault, helping the band to build a loyal following and critical acclaim in the underground metal scene.",
+      "The bassist, born in March 12, 1989, is the thunderous bassist of the heavy-hitting metal outfit, 'Distortion Band'. Born and raised in Los Angeles, California, his passion for music began at an early age, with his parents introducing him to the likes of Led Zeppelin and Iron Maiden. \n\nThe bassist began playing bass at 15 and quickly developed a knack for the instrument, honing his skills through years of practice and gigging in various local bands. With a style that blends aggressive precision with melodic flair, the bassist has become a driving force behind Distortion Band's sonic assault, helping the band to build a loyal following and critical acclaim in the underground rock scene.",
     image: "/member_images/band_bassist.png",
   },
   {
