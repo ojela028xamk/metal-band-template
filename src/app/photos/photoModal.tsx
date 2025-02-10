@@ -21,7 +21,7 @@ const PhotoModal = ({ toggleModal, modalPhoto }: PhotoModalProps) => {
       <div className={css.photo_modal_content} ref={ref}>
         <Image
           src={modalPhoto}
-          alt={""}
+          alt={"Band photo"}
           width={0}
           height={0}
           layout="responsive"
