@@ -18,7 +18,13 @@
 
       .member_image {
         flex: 1;
-        padding: 0.5em;
+        margin: 0.5em;
+        border: 2px solid $white;
+        align-self: center;
+
+        .image {
+          vertical-align: middle;
+        }
       }
 
       .member_description {

@@ -14,12 +14,12 @@ const Footer = () => {
       <span className={css.footer_text}>Powered by: </span>
       <Image
         className={css.footer_image}
-        src={"/ms_designer_logo.png"}
-        alt={"Microsoft Designer Logo"}
-        width={40}
-        height={40}
+        src={"/pexels_logo.png"}
+        alt={"Pexels Logo"}
+        width={45}
+        height={45}
       />
-      <span className={css.footer_text}>Microsoft Designer | </span>
+      <span className={css.footer_text}>Pexels | </span>
       <Image
         className={css.footer_image}
         src={"/deepai_logo.png"}
