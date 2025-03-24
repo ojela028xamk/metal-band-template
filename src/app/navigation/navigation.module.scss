@@ -1,3 +1,5 @@
+@use "../responsive.scss";
+
 .navigation_main {
   position: absolute;
   left: 0;
@@ -7,6 +9,10 @@
   z-index: 1;
   max-width: 1024px;
   top: 10vh;
+
+  @media (max-width: responsive.$tablet) {
+    top: 0;
+  }
 }
 
 .navigation_page {
@@ -17,5 +23,12 @@
 }
 
 .navigation_bar {
+  margin: auto;
   display: flex;
+
+  @media (max-width: responsive.$tablet) {
+    max-width: responsive.$mobile-large;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
