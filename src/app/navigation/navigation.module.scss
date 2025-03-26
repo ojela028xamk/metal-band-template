@@ -1,3 +1,4 @@
+@use "../main.scss";
 @use "../responsive.scss";
 
 .navigation_main {
@@ -13,22 +14,54 @@
   @media (max-width: responsive.$tablet) {
     top: 0;
   }
+
+  .navigation_bar {
+    margin: auto;
+    display: flex;
+
+    @media (max-width: responsive.$tablet) {
+      max-width: responsive.$mobile-large;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .navigation_bar_mobile {
+    display: none;
+  }
 }
 
 .navigation_page {
   margin: auto;
   text-align: center;
-  z-index: 1;
   max-width: 720px;
-}
 
-.navigation_bar {
-  margin: auto;
-  display: flex;
+  .navigation_bar {
+    margin: auto;
+    display: flex;
 
-  @media (max-width: responsive.$tablet) {
-    max-width: responsive.$mobile-large;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @media (max-width: (responsive.$tablet - 1)) {
+      display: none;
+    }
+  }
+
+  .navigation_bar_mobile {
+    @media (min-width: responsive.$tablet) {
+      display: none;
+    }
+
+    .mobile_menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0.8em;
+      background-color: black;
+      color: main.$white;
+
+      .mobile_menu_icon {
+        font-size: 2.5rem;
+      }
+    }
   }
 }
