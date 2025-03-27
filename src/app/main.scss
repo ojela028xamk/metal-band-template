@@ -3,8 +3,9 @@ $white: #dfdfdf;
 $gray: gray;
 
 // Other
-$content-margin: 1em auto;
-$background-transparent: rgb(0, 0, 0, 0.7);
+$content-margin: 0.8rem;
+$content-padding: 0.5em;
+$background-transparent: rgba(0, 0, 0, 0.7);
 
 @mixin header_text {
   letter-spacing: 3px;
