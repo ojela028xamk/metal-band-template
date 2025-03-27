@@ -49,19 +49,5 @@
     @media (min-width: responsive.$tablet) {
       display: none;
     }
-
-    .mobile_menu {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 0.8em;
-      background-color: black;
-      color: main.$white;
-
-      .mobile_menu_icon {
-        font-size: 2.5rem;
-      }
-    }
   }
 }
