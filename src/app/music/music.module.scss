@@ -1,3 +1,4 @@
+@use "../responsive";
 @import "../main";
 
 .music {
@@ -10,6 +11,10 @@
     padding: 1em;
     background-color: $background-transparent;
     color: $white;
+
+    @media (max-width: responsive.$tablet) {
+      flex-direction: column;
+    }
 
     .album_image {
       flex: 1;
