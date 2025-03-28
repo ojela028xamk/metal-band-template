@@ -3,7 +3,7 @@ $white: #dfdfdf;
 $gray: gray;
 
 // Other
-$content-margin: 0.8rem;
+$content-margin: 0.8rem auto;
 $background-transparent: rgba(0, 0, 0, 0.7);
 
 @mixin header_text {

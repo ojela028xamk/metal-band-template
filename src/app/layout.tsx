@@ -26,11 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${css.layout} ${rockFont.className}`}>
-        <div className={css.app_container}>
-          <Navigation />
-          {children}
-          <Footer />
-        </div>
+        <Navigation />
+        {children}
+        <Footer />
       </body>
     </html>
   );
