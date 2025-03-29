@@ -18,6 +18,11 @@
 
     .album_image {
       flex: 1;
+
+      @media (max-width: responsive.$tablet) and (width > 500px) {
+        align-self: center;
+        max-width: 380px;
+      }
     }
 
     .album_info {

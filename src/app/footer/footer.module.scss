@@ -2,8 +2,9 @@
 @import "../main";
 
 .footer {
-  max-width: 1280px;
+  max-width: 1256px;
   margin: $content-margin;
+  margin-bottom: 3em;
   font-size: 1.5rem;
   display: flex;
   align-items: center;

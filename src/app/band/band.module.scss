@@ -17,12 +17,13 @@
       padding: 1em;
       background-color: $background-transparent;
 
-      @media (max-width: responsive.$mobile-large) {
+      @media (max-width: responsive.$tablet) {
         flex-direction: column-reverse;
       }
 
       .member_image {
         flex: 1;
+        max-width: 380px;
         margin: 0.5em;
         border: 2px solid $white;
         align-self: center;
