@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import css from "./photos.module.scss";
-import { bandPhotos } from "./photosList";
+import { BandPhoto, bandPhotos } from "./photosList";
 import PhotoModal from "./photoModal";
 import { useToggle } from "react-use";
 import { useState } from "react";
@@ -9,16 +9,16 @@ import BackgroundImage from "../common/backgroundImage";
 
 const Photos = () => {
   const [modal, toggleModal] = useToggle(false);
-  const [modalPhoto, setModalPhoto] = useState<string>("");
+  const [modalPhoto, setModalPhoto] = useState<BandPhoto>();
 
-  const handleModal = (photoUrl: string) => {
-    setModalPhoto(photoUrl);
+  const handleModal = (photo: BandPhoto) => {
+    setModalPhoto(photo);
     toggleModal();
   };
 
   return (
     <div className={css.photos}>
-      {modal && (
+      {modal && modalPhoto && (
         <PhotoModal toggleModal={toggleModal} modalPhoto={modalPhoto} />
       )}
       <BackgroundImage
@@ -35,7 +35,7 @@ const Photos = () => {
             alt={"Band photo"}
             width={photo.width}
             height={photo.height}
-            onClick={() => handleModal(photo.src)}
+            onClick={() => handleModal(photo)}
           />
         ))}
       </div>

@@ -3,10 +3,11 @@ import Image from "next/image";
 import css from "./photoModal.module.scss";
 import { useRef } from "react";
 import { useClickAway } from "react-use";
+import { BandPhoto } from "./photosList";
 
 type PhotoModalProps = {
   toggleModal: (nextValue?: any) => void;
-  modalPhoto: string;
+  modalPhoto: BandPhoto;
 };
 
 const PhotoModal = ({ toggleModal, modalPhoto }: PhotoModalProps) => {
@@ -20,11 +21,11 @@ const PhotoModal = ({ toggleModal, modalPhoto }: PhotoModalProps) => {
     <div className={css.photo_modal}>
       <div className={css.photo_modal_content} ref={ref}>
         <Image
+          className={css.modal_image}
           src={modalPhoto}
           alt={"Band photo"}
-          width={0}
-          height={0}
-          layout="responsive"
+          width={modalPhoto.width}
+          height={modalPhoto.height}
         />
       </div>
     </div>

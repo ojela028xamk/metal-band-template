@@ -1,4 +1,4 @@
-type BandPhoto = {
+export type BandPhoto = {
   src: string;
   width: number;
   height: number;
