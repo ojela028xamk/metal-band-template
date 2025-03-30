@@ -1,4 +1,4 @@
-import { Dialog } from "radix-ui";
+import { Dialog, VisuallyHidden } from "radix-ui";
 import css from "./navigationMobile.module.scss";
 import { navigationList } from "./navigationList";
 import Link from "next/link";
@@ -14,7 +14,13 @@ const NavigationMobile = () => {
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className={css.menu_overlay} />
-        <Dialog.Content className={css.menu_content}>
+        <Dialog.Content
+          className={css.menu_content}
+          aria-describedby={undefined}
+        >
+          <VisuallyHidden.Root>
+            <Dialog.Title>Navigation</Dialog.Title>
+          </VisuallyHidden.Root>
           {navigationList.map((navItem) => (
             <Dialog.Close key={navItem.link} asChild>
               <Link href={navItem.link} className={css.menu_link}>
