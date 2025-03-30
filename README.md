@@ -32,6 +32,7 @@ Logo and album cover editing is done with Figma. Background video is edited with
 - Typescript
 - Next.js
 - Sass
+- Radix UI
 - React-use
 - DeepAI Text Generator
 - Figma
