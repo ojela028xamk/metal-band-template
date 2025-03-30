@@ -1,3 +1,4 @@
+@use "../responsive.scss";
 @import "../main";
 
 .band {
@@ -16,13 +17,20 @@
       padding: 1em;
       background-color: $background-transparent;
 
+      @media (max-width: responsive.$tablet) {
+        flex-direction: column-reverse;
+      }
+
       .member_image {
         flex: 1;
+        max-width: 380px;
         margin: 0.5em;
         border: 2px solid $white;
         align-self: center;
 
         .image {
+          width: 100%;
+          height: auto;
           vertical-align: middle;
         }
       }
@@ -34,12 +42,12 @@
         .member_name {
           @include header_text;
           margin: 0;
-          font-size: 2.5em;
+          font-size: 2.5rem;
         }
 
         .member_description {
           font-family: "emoji";
-          font-size: 1.3em;
+          font-size: 1.3rem;
           white-space: pre-line;
         }
       }

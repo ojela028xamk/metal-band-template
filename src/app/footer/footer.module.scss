@@ -1,22 +1,33 @@
+@use "../responsive";
 @import "../main";
 
 .footer {
-  max-width: 1280px;
+  max-width: 1256px;
   margin: $content-margin;
-  padding: 1em 0;
-  text-align: center;
-  font-family: "emoji";
-  color: $white;
+  margin-bottom: 3em;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.5em;
+  text-align: center;
+  font-family: "emoji";
+  color: $white;
   background-color: $background-transparent;
 
-  .footer_text {
-    font-size: 1.5em;
+  @media (max-width: responsive.$mobile-large) {
+    flex-direction: column;
   }
 
-  .footer_image {
-    margin: 0 0.5em;
+  .footer_item {
+    margin: 0.2em 0;
+
+    .footer_text {
+      vertical-align: super;
+    }
+
+    .footer_image {
+      margin: 0 0.5em;
+    }
   }
 }

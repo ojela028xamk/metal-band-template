@@ -2,10 +2,11 @@
 import Image from "next/image";
 import css from "./navigation.module.scss";
 import NavigationCard from "./navigationCard";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import Link from "next/link";
 import { navigationList } from "./navigationList";
 import { usePathname } from "next/navigation";
+import NavigationMobile from "./navigationMobile";
 
 const Navigation = () => {
   const currentPath = usePathname();
@@ -18,11 +19,12 @@ const Navigation = () => {
     >
       <Link href="/">
         <Image
+          className={css.logo_image}
           src={"/logo.png"}
           alt={"Distortion Band Logo"}
           width={803}
           height={195}
-          layout="responsive"
+          priority
         />
       </Link>
       <nav className={css.navigation_bar}>
@@ -31,6 +33,9 @@ const Navigation = () => {
             <NavigationCard navItem={navItem} />
           </Fragment>
         ))}
+      </nav>
+      <nav className={css.navigation_bar_mobile}>
+        <NavigationMobile />
       </nav>
     </div>
   );

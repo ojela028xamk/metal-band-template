@@ -1,0 +1,54 @@
+@use "../main.scss";
+@use "../responsive.scss";
+
+.mobile_menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.8em;
+  background-color: black;
+  color: main.$white;
+  border: none;
+
+  .mobile_menu_icon {
+    font-size: 2rem;
+  }
+}
+
+.menu_overlay {
+  background-color: black;
+  opacity: 0.3;
+  position: fixed;
+  inset: 0;
+
+  @media (min-width: responsive.$tablet) {
+    display: none;
+  }
+}
+
+.menu_content {
+  background-color: black;
+  color: main.$white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @media (min-width: responsive.$tablet) {
+    display: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  .menu_link {
+    display: block;
+    color: main.$white;
+    padding: 0.5em;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}

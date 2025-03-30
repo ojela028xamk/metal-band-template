@@ -6,11 +6,12 @@
 
   .photos_grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 1em;
 
     .band_photo {
-      height: 416px !important;
+      width: 100%;
+      max-height: 400px;
       object-fit: cover;
       background-color: $background-transparent;
 

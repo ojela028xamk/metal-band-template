@@ -14,10 +14,15 @@
   background-color: black;
 
   .photo_modal_content {
+    width: 80%;
     background-color: $white;
     margin: 1em auto;
     padding: 20px;
     border: 1px solid $gray;
-    width: 80%;
+
+    .modal_image {
+      width: 100%;
+      height: auto;
+    }
   }
 }

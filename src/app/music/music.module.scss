@@ -1,3 +1,4 @@
+@use "../responsive";
 @import "../main";
 
 .music {
@@ -11,8 +12,22 @@
     background-color: $background-transparent;
     color: $white;
 
+    @media (max-width: responsive.$tablet) {
+      flex-direction: column;
+    }
+
     .album_image {
       flex: 1;
+
+      @media (max-width: responsive.$tablet) and (width > 500px) {
+        align-self: center;
+        max-width: 380px;
+      }
+
+      .image {
+        width: 100%;
+        height: auto;
+      }
     }
 
     .album_info {
@@ -22,7 +37,7 @@
       .album_name {
         @include header_text;
         margin: 0;
-        font-size: 2em;
+        font-size: 2rem;
         padding-left: 20px;
       }
 
@@ -30,13 +45,13 @@
       .album_type {
         margin: 10px 0 0 0;
         font-family: "emoji";
-        font-size: 1.2em;
+        font-size: 1.2rem;
         padding-left: 20px;
       }
 
       .album_tracks {
         font-family: "emoji";
-        font-size: 1.2em;
+        font-size: 1.2rem;
 
         .album_item {
           padding: 5px 0;
