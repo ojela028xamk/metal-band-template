@@ -23,6 +23,8 @@ const Photos = () => {
       )}
       <BackgroundImage
         source={"/background_images/background_image_photos.jpg"}
+        width={2640}
+        height={1760}
       />
       <div className={css.photos_grid}>
         {bandPhotos.map((photo, index) => (

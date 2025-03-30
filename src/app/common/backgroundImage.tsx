@@ -3,16 +3,18 @@ import css from "./backgroundImage.module.scss";
 
 type BackgroundImageProps = {
   source: string;
+  width: number;
+  height: number;
 };
 
-const BackgroundImage = ({ source }: BackgroundImageProps) => {
+const BackgroundImage = ({ source, width, height }: BackgroundImageProps) => {
   return (
     <Image
       className={css.background_image}
       src={source}
       alt={"Background image"}
-      width={1920}
-      height={1080}
+      width={width}
+      height={height}
       priority
     />
   );

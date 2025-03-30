@@ -7,6 +7,8 @@ const Events = () => {
     <div className={css.events}>
       <BackgroundImage
         source={"/background_images/background_image_events.jpg"}
+        width={4000}
+        height={2670}
       />
       {bandEvents.map((event) => (
         <div className={css.events_row} key={event.city}>

@@ -9,6 +9,8 @@ const Band = () => {
       <div className={css.band_members}>
         <BackgroundImage
           source={"/background_images/background_image_band.jpg"}
+          width={1920}
+          height={1280}
         />
         {bandMembers.map((member) => (
           <div key={member.name} className={css.member}>

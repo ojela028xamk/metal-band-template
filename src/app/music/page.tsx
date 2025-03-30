@@ -8,6 +8,8 @@ const Music = () => {
     <div className={css.music}>
       <BackgroundImage
         source={"/background_images/background_image_music.jpg"}
+        width={4429}
+        height={2953}
       />
       {bandAlbums.map((album) => (
         <div className={css.album} key={album.album_name}>
