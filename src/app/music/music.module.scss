@@ -37,7 +37,7 @@
       .album_name {
         @include header_text;
         margin: 0;
-        font-size: 2em;
+        font-size: 2rem;
         padding-left: 20px;
       }
 
@@ -45,13 +45,13 @@
       .album_type {
         margin: 10px 0 0 0;
         font-family: "emoji";
-        font-size: 1.2em;
+        font-size: 1.2rem;
         padding-left: 20px;
       }
 
       .album_tracks {
         font-family: "emoji";
-        font-size: 1.2em;
+        font-size: 1.2rem;
 
         .album_item {
           padding: 5px 0;
