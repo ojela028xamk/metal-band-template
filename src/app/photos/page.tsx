@@ -25,16 +25,15 @@ const Photos = () => {
         source={"/background_images/background_image_photos.jpg"}
       />
       <div className={css.photos_grid}>
-        {bandPhotos.map((photoUrl, index) => (
+        {bandPhotos.map((photo, index) => (
           <Image
             key={index}
             className={css.band_photo}
-            src={photoUrl}
+            src={photo.src}
             alt={"Band photo"}
-            width={0}
-            height={0}
-            layout="responsive"
-            onClick={() => handleModal(photoUrl)}
+            width={photo.width}
+            height={photo.height}
+            onClick={() => handleModal(photo.src)}
           />
         ))}
       </div>
