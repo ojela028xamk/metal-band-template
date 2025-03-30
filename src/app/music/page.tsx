@@ -13,11 +13,11 @@ const Music = () => {
         <div className={css.album} key={album.album_name}>
           <div className={css.album_image}>
             <Image
+              className={css.image}
               src={album.url}
               alt={album.album_name}
-              height={0}
-              width={0}
-              layout="responsive"
+              height={800}
+              width={800}
             />
           </div>
           <div className={css.album_info}>
