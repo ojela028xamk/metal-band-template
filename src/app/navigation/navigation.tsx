@@ -19,11 +19,12 @@ const Navigation = () => {
     >
       <Link href="/">
         <Image
+          className={css.logo_image}
           src={"/logo.png"}
           alt={"Distortion Band Logo"}
           width={803}
           height={195}
-          layout="responsive"
+          priority
         />
       </Link>
       <nav className={css.navigation_bar}>

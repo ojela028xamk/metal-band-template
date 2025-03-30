@@ -19,11 +19,10 @@ const Band = () => {
             <div className={css.member_image}>
               <Image
                 className={css.image}
-                width={0}
-                height={0}
-                layout="responsive"
                 src={member.image}
                 alt={`${member.name} ${member.role}`}
+                width={2936}
+                height={2936}
               />
             </div>
           </div>

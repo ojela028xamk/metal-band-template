@@ -11,6 +11,11 @@
   max-width: 1024px;
   top: 10vh;
 
+  .logo_image {
+    width: 100%;
+    height: auto;
+  }
+
   @media (max-width: responsive.$tablet) {
     top: 0;
   }
@@ -35,6 +40,11 @@
   margin: auto;
   text-align: center;
   max-width: 720px;
+
+  .logo_image {
+    width: 100%;
+    height: auto;
+  }
 
   .navigation_bar {
     margin: auto;

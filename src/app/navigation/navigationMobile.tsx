@@ -16,7 +16,7 @@ const NavigationMobile = () => {
         <Dialog.Overlay className={css.menu_overlay} />
         <Dialog.Content className={css.menu_content}>
           {navigationList.map((navItem) => (
-            <Dialog.Close asChild>
+            <Dialog.Close key={navItem.link} asChild>
               <Link href={navItem.link} className={css.menu_link}>
                 {navItem.link}
               </Link>

@@ -11,9 +11,8 @@ const BackgroundImage = ({ source }: BackgroundImageProps) => {
       className={css.background_image}
       src={source}
       alt={"Background image"}
-      width={0}
-      height={0}
-      layout="responsive"
+      width={1920}
+      height={1080}
       priority
     />
   );
