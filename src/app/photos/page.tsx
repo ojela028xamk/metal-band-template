@@ -1,6 +1,6 @@
 import { bandPhotos } from "./photosList";
 import BackgroundImage from "../common/backgroundImage";
-import { Dialog } from "radix-ui";
+import { Dialog, VisuallyHidden } from "radix-ui";
 import Image from "next/image";
 import css from "./photos.module.scss";
 
@@ -13,8 +13,8 @@ const Photos = () => {
         height={1760}
       />
       <div className={css.photos_grid}>
-        {bandPhotos.map((photo) => (
-          <Dialog.Root>
+        {bandPhotos.map((photo, index) => (
+          <Dialog.Root key={index}>
             <Dialog.Trigger asChild>
               <Image
                 className={css.band_photo}
@@ -27,6 +27,12 @@ const Photos = () => {
             <Dialog.Portal>
               <Dialog.Overlay className={css.modal_overlay}>
                 <Dialog.Content className={css.modal_content}>
+                  <VisuallyHidden.Root>
+                    <Dialog.Title>Photo modal</Dialog.Title>
+                    <Dialog.Description>
+                      Showing the whole image on a modal
+                    </Dialog.Description>
+                  </VisuallyHidden.Root>
                   <Image
                     className={css.modal_image}
                     src={photo}
