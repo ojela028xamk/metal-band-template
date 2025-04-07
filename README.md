@@ -26,7 +26,14 @@ Logo and album cover editing is done with Figma. Background video is edited with
 -	Johannes Plenio https://www.pexels.com/fi-fi/@jplenio/
 -	Wolfgang https://www.pexels.com/fi-fi/@wolfgang-1002140/
 
-## Technologies/libraries/sites used
+## Sites used
+
+- [Pexels](https://www.pexels.com/fi-fi/)
+- [SVG Repo](https://www.svgrepo.com/)
+- [Adobe Express](https://www.adobe.com/fi/express/)
+- [DeepAI Text Generator](https://deepai.org/chat/text-generator)
+
+## Technologies/libraries
 
 - HTML, CSS, JavaScript
 - Typescript
@@ -34,8 +41,4 @@ Logo and album cover editing is done with Figma. Background video is edited with
 - Sass
 - Radix UI
 - React-use
-- DeepAI Text Generator
 - Figma
-- Pexels
-- SVG Repo
-- Adobe Express
