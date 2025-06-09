@@ -21,14 +21,14 @@ export const bandAlbums: Album[] = [
     ],
     year: 2023,
     type: "Album",
-    url: "/album_images/album_photo_4.png",
+    url: "/album_images/album_photo_4.jpg",
   },
   {
     album_name: "Breaking point",
     tracks: ["Darkest Hour", "Under Pressure", "Challenge", "No Turning Back"],
     year: 2020,
     type: "EP",
-    url: "/album_images/album_photo_3.png",
+    url: "/album_images/album_photo_3.jpg",
   },
   {
     album_name: "Electric Storm",
@@ -40,7 +40,7 @@ export const bandAlbums: Album[] = [
     ],
     year: 2018,
     type: "EP",
-    url: "/album_images/album_photo_2.png",
+    url: "/album_images/album_photo_2.jpg",
   },
   {
     album_name: "Shattered Reflections",
@@ -56,6 +56,6 @@ export const bandAlbums: Album[] = [
     ],
     year: 2017,
     type: "Album",
-    url: "/album_images/album_photo_1.png",
+    url: "/album_images/album_photo_1.jpg",
   },
 ];
