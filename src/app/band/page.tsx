@@ -23,8 +23,10 @@ const Band = () => {
                 className={css.image}
                 src={member.image}
                 alt={`${member.name} ${member.role}`}
-                width={2936}
-                height={2936}
+                width={350}
+                height={350}
+                priority
+                quality={50}
               />
             </div>
           </div>

@@ -16,6 +16,7 @@ const BackgroundImage = ({ source, width, height }: BackgroundImageProps) => {
       width={width}
       height={height}
       priority
+      quality={50}
     />
   );
 };
