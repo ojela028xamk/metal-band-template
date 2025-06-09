@@ -17,8 +17,10 @@ const NavigationCard = ({ navItem }: NavigationCardProps) => {
           className={css.card_image}
           src={navItem.image}
           alt={"Navigation image"}
-          width={600}
-          height={600}
+          width={250}
+          height={250}
+          priority
+          quality={50}
         />
         <span className={css.card_text}>{linkName}</span>
       </Link>

@@ -25,6 +25,7 @@ const Navigation = () => {
           width={803}
           height={195}
           priority
+          quality={50}
         />
       </Link>
       <nav className={css.navigation_bar}>

@@ -19,6 +19,7 @@ const Footer = () => {
           alt={"Pexels Logo"}
           width={45}
           height={45}
+          quality={50}
         />
         <span className={css.footer_text}>Pexels</span>
       </div>
@@ -29,6 +30,7 @@ const Footer = () => {
           alt={"DeepAI Logo"}
           width={40}
           height={40}
+          quality={50}
         />
         <span className={css.footer_text}>DeepAI Text Generator</span>
       </div>

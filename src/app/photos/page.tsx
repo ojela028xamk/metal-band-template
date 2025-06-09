@@ -9,8 +9,8 @@ const Photos = () => {
     <div className={css.photos}>
       <BackgroundImage
         source={"/background_images/background_image_photos.jpg"}
-        width={2640}
-        height={1760}
+        width={1920}
+        height={1280}
       />
       <div className={css.photos_grid}>
         {bandPhotos.map((photo, index) => (
@@ -22,6 +22,8 @@ const Photos = () => {
                 alt={"Band photo"}
                 width={photo.width}
                 height={photo.height}
+                priority
+                quality={50}
               />
             </Dialog.Trigger>
             <Dialog.Portal>
@@ -39,6 +41,7 @@ const Photos = () => {
                     alt={"Band photo"}
                     width={photo.width}
                     height={photo.height}
+                    quality={50}
                   />
                 </Dialog.Content>
               </Dialog.Overlay>

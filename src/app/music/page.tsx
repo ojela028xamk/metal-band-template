@@ -8,8 +8,8 @@ const Music = () => {
     <div className={css.music}>
       <BackgroundImage
         source={"/background_images/background_image_music.jpg"}
-        width={4429}
-        height={2953}
+        width={1920}
+        height={1280}
       />
       {bandAlbums.map((album) => (
         <div className={css.album} key={album.album_name}>
@@ -18,8 +18,10 @@ const Music = () => {
               className={css.image}
               src={album.url}
               alt={album.album_name}
-              height={800}
-              width={800}
+              height={450}
+              width={450}
+              priority
+              quality={100}
             />
           </div>
           <div className={css.album_info}>
