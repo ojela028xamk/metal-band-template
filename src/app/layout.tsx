@@ -16,6 +16,11 @@ const rockFont = localFont({ src: "./chinese_rocks.otf" });
 export const metadata: Metadata = {
   title: "Distortion Band",
   description: "Design by Jere Länsipii",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+  },
 };
 
 export default function RootLayout({
